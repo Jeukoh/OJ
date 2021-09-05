@@ -18,4 +18,5 @@ pip-selfcheck.json
 *.txt
 main.py
 /study
+/tmp
 # End of https://www.toptal.com/developers/gitignore/api/venv
