@@ -16,9 +16,7 @@ hash_code = {
 
 
 def changecode1(code1):
-    out = ''
-    for s in code1:
-        out += binhash[s]
+    out = ''.join(binhash[x] for x in code1)
     return changecode2(out.strip('0'))
 
 def changecode2(code1):
