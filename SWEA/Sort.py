@@ -48,7 +48,6 @@ def quick_sort(arr):
         sort(mid, high)
 
     def partition(low, high):
-        #print(f'low {low} high {high} pivot_idx {(low+high)//2}')
         pivot = arr[(low + high) // 2]
         while low <= high:
             while arr[low] < pivot:
@@ -67,7 +66,6 @@ def quick_sort(arr):
 
 def merge_sort(arr):
     def sort(low,high):
-        #print('sort',low,high)
         if high-low <= 1:
             return arr[low:high]
 
@@ -77,7 +75,6 @@ def merge_sort(arr):
         return merge(left_list,right_list)
 
     def merge(left,right):
-        #print('merge',left, right)
         result = []
         i = 0
         j = 0
